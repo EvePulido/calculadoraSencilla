@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+    background: linear-gradient(to right, #3f4c6b, #606c88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculadora {
+    background-color: rgb(242, 255, 255);
+    color: white;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); /* fr para crear columnas con el mismo espacio */
+    width: 290px;
+    height: 500px;
+    padding: 5px 20px 20px 20px;
+    border-radius: 30px;
+    box-shadow: #3b455d 6px 8px 8px;
+}
+
+.boton {
+    background-color:#C0E6FF;
+    margin: 8px;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 12pt;
+    box-shadow: #8298c3 2px 2px 2px;
+}
+
+.boton:hover {
+    background-color: #A4DAFD;
+}
+
+.pantalla {
+    background-color:#3b455d;
+    margin: 2px 8px 8px 8px;
+    padding: 25px 8px 8px 0px;
+    grid-column: 1 / -1;
+    border-radius: 15px;
+    overflow-x: auto;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#encender {
+    background-color: #95CCEF;
+    grid-column: span 2;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12pt;
+}
+#encender:hover {
+    background-color: #75BAE6;
+}
+
+#suma {
+    grid-row: span 2; 
+    font-weight: 600;
+    background-color: #95CCEF;
+}
+#suma:hover {
+    background-color: #75BAE6;
+}
+
+#resta {
+    font-weight: 600;
+    background-color: #95CCEF;
+}
+#resta:hover {
+    background-color: #75BAE6;
+}
+
+#multiplicacion {
+    font-weight: 600;
+    background-color: #95CCEF;
+}
+#multiplicacion:hover {
+    background-color: #75BAE6;
+}
+
+#division {
+    font-weight: 600;
+    background-color: #95CCEF;
+}
+#division:hover {
+    background-color: #75BAE6;
+}
+
+#imagen {
+    margin: 0px;
+    padding: 0px;
+    grid-column: 1 / -1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+}
